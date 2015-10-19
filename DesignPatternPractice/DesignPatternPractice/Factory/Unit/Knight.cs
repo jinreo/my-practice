@@ -14,7 +14,7 @@ namespace DesignPatternPractice
 	{
 		public Knight (string name)
 		{
-			unitName = name;
+			unitName = name; 
 			Console.WriteLine("Create Success Knight");
 		}
 		
