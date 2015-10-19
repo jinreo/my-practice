@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="3.5" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>9.0.21022</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{BAAF32C1-EBCB-41F5-8547-095CDF3E245F}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <RootNamespace>DesignPatternPractice</RootNamespace>
+    <AssemblyName>DesignPatternPractice</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <DebugSymbols>True</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>False</Optimize>
+    <OutputPath>bin\Debug</OutputPath>
+    <DefineConstants>DEBUG;</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>x86</PlatformTarget>
+    <ConsolePause>False</ConsolePause>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <DebugType>none</DebugType>
+    <Optimize>True</Optimize>
+    <OutputPath>bin\Release</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>x86</PlatformTarget>
+    <ConsolePause>False</ConsolePause>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <ItemGroup>
+    <Folder Include="Factory\" />
+    <Folder Include="Factory\Creator\" />
+    <Folder Include="Factory\Unit\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Factory\Program.cs" />
+    <Compile Include="Factory\Creator\Creator.cs" />
+    <Compile Include="Factory\Unit\Archer.cs" />
+    <Compile Include="Factory\Unit\Unit.cs" />
+    <Compile Include="Factory\Unit\Warrior.cs" />
+    <Compile Include="Factory\Creator\ArcherCreator.cs" />
+    <Compile Include="Factory\Creator\WarriorCraetor.cs" />
+    <Compile Include="Factory\Unit\Knight.cs" />
+    <Compile Include="Factory\Unit\Musketier.cs" />
+  </ItemGroup>
+</Project>
